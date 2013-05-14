@@ -475,6 +475,17 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
 	[self.backgroundView insertSubview:view atIndex:index];
 }
 
+////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark Message Queue Operation
+////////////////////////////////////////////////////////////////////////
+- (NSUInteger) messageQueueLength {
+    return self.messageQueue.count;
+}
+
+- (void) clearMessageQueue {
+    [self.messageQueue removeAllObjects];
+}
 
 ////////////////////////////////////////////////////////////////////////
 #pragma mark -

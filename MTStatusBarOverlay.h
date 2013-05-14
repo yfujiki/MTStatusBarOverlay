@@ -170,12 +170,19 @@ typedef enum MTMessageType {
 - (void)hideTemporary;
 // this shows the status bar overlay, if there is text to show
 - (void)show;
+// clear message queue
+- (void)clearMessageQueue;
 
 // saves the state in NSUserDefaults and synchronizes them
 - (void)saveState;
 - (void)saveStateSynchronized:(BOOL)synchronizeAtEnd;
 // restores the state from NSUserDefaults
 - (void)restoreState;
+
+// Returns length of current message queue
+- (NSUInteger) messageQueueLength;
+// Empty message queue
+- (void) clearMessageQueue;
 
 @end
 
