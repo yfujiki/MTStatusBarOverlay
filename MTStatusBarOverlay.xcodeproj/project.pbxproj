@@ -165,6 +165,7 @@
 				GCC_PREFIX_HEADER = MTStatusBarOverlay_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = MTStatusBarOverlay;
 			};
 			name = Debug;
@@ -180,6 +181,7 @@
 				GCC_PREFIX_HEADER = MTStatusBarOverlay_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = MTStatusBarOverlay;
 			};
 			name = Release;
